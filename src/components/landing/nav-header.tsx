@@ -88,7 +88,7 @@ function NavLinks({ scrolled }: { scrolled: boolean }) {
         <Link
           key={link}
           href={`#${link.toLowerCase()}`}
-          className={`font-medium hover:text-indigo-600 transition-colors ${
+          className={`font-medium hover:text-cyan-600 transition-colors ${
             scrolled ? 'text-gray-800' : 'text-white'
           }`}
         >

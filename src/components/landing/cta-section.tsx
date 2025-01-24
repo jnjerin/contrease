@@ -127,12 +127,17 @@ export function CTASection() {
             </button>
           </div>
 
-          <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 text-sm">
+          <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-16 text-sm">
             {[
               {
                 icon: '🚀',
                 title: 'Quick Setup',
                 description: 'Get started in minutes with DocuSign integration, seamless contract generation and signing workflow'
+              },
+              {
+                icon: '📝',
+                title: 'Smart Templates',
+                description: 'AI-powered contract templates with dynamic field suggestions'
               },
               {
                 icon: '🤖',
