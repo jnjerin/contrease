@@ -1,11 +1,17 @@
-import Image from "next/image";
-import { ContractForm } from '@/components/contract-form'
+import { Hero } from '@/components/landing/hero'
+import { Features } from '@/components/landing/features'
+import { HowItWorks } from '@/components/landing/how-it-works'
+import { CTASection } from '@/components/landing/cta-section'
+import { Testimonials } from '@/components/landing/testimonials'
 
 export default function Home() {
   return (
-    <main className="container mx-auto px-4">
-      <h1 className="text-4xl font-bold mb-8">Contrease</h1>
-      <ContractForm />
+    <main>
+      <Hero />
+      <Features />
+      <HowItWorks />
+      <Testimonials />
+      <CTASection />
     </main>
   )
 }
