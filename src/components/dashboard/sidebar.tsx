@@ -7,7 +7,7 @@ import {
   HomeIcon,
   DocumentTextIcon,
   ChartBarIcon,
-  UserCircleIcon,
+  // UserCircleIcon,
   Cog6ToothIcon
 } from '@heroicons/react/24/outline'
 
@@ -18,7 +18,7 @@ export function Sidebar() {
     { name: 'Dashboard', href: '/dashboard', icon: HomeIcon },
     { name: 'Contracts', href: '/dashboard/contracts', icon: DocumentTextIcon },
     { name: 'Analytics', href: '/dashboard/analytics', icon: ChartBarIcon },
-    { name: 'Profile', href: '/dashboard/profile', icon: UserCircleIcon },
+    // { name: 'Profile', href: '/dashboard/profile', icon: UserCircleIcon },
     { name: 'Settings', href: '/dashboard/settings', icon: Cog6ToothIcon },
   ]
 
