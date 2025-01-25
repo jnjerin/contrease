@@ -9,16 +9,20 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@auth/prisma-adapter": "^2.7.4",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
     "@headlessui/react": "^2.2.0",
     "@heroicons/react": "^2.2.0",
     "@mui/material": "^6.4.1",
+    "@prisma/client": "^6.2.1",
     "axios": "^1.7.9",
     "docusign-esign": "^8.0.1",
     "firebase": "^11.2.0",
     "framer-motion": "^12.0.5",
     "next": "15.1.6",
+    "next-auth": "^4.24.11",
+    "prisma": "^6.2.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
