@@ -1,5 +1,8 @@
 'use client'
 
+import { RecentContracts } from '@/components/dashboard/recent-contracts'
+import { ActivityTimeline } from '@/components/dashboard/activity-timeline'
+
 import { motion } from 'framer-motion'
 import {
   ArrowUpIcon,
@@ -70,12 +73,12 @@ export default function DashboardPage() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         <div className="bg-white rounded-xl p-6 shadow-sm">
           <h3 className="text-lg font-semibold text-gray-900 mb-4">Recent Contracts</h3>
-          {/* Recent contracts list will go here */}
+          <RecentContracts />
         </div>
 
         <div className="bg-white rounded-xl p-6 shadow-sm">
           <h3 className="text-lg font-semibold text-gray-900 mb-4">Activity Timeline</h3>
-          {/* Activity timeline will go here */}
+          <ActivityTimeline />
         </div>
       </div>
     </div>
