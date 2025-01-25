@@ -22,7 +22,7 @@ export function Hero() {
           >
             <h1 className="text-6xl font-bold text-white mb-6 leading-tight">
               Transform Your{' '}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">
                 Contract Management
               </span>
               {' '}with AI
@@ -34,7 +34,7 @@ export function Hero() {
             </p>
   
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
-              <button className="bg-white text-cyan-700 px-8 py-4 rounded-full font-semibold hover:shadow-xl hover:scale-105 transition-all duration-300">
+              <button className="bg-white text-cyan-500 px-8 py-4 rounded-full font-semibold hover:shadow-xl hover:scale-105 transition-all duration-300">
                 Get Started Free →
               </button>
               <button className="border-2 border-white/30 text-white px-8 py-4 rounded-full font-semibold hover:bg-white/10 transition-all duration-300">

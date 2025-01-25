@@ -23,7 +23,7 @@ export function NavHeader() {
       <nav className="container mx-auto px-6 py-6">
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center space-x-2">
-          <div className="w-10 h-10 bg-gradient-to-r from-blue-600 to-cyan-500 rounded-lg flex items-center justify-center">
+          <div className="w-10 h-10 bg-gradient-to-r from-blue-600 to-cyan-300 rounded-lg flex items-center justify-center">
               <span className="text-2xl font-bold text-white">C</span>
             </div>
             <span className={`text-2xl font-bold ${scrolled ? 'text-gray-900' : 'text-white'}`}>
@@ -33,7 +33,7 @@ export function NavHeader() {
 
           <div className="hidden md:flex items-center space-x-8">
             <NavLinks scrolled={scrolled} />
-            <button className="bg-gradient-to-r from-blue-600 to-cyan-500 text-white px-8 py-3 rounded-full font-medium hover:shadow-lg hover:scale-105 transition-all duration-300">
+            <button className="bg-gradient-to-r from-blue-600 to-cyan-300 text-white px-8 py-3 rounded-full font-medium hover:shadow-lg hover:scale-105 transition-all duration-300">
               Start Free
             </button>
           </div>
@@ -70,7 +70,7 @@ export function NavHeader() {
             className="md:hidden mt-4"
           >
             <NavLinks scrolled={scrolled} />
-            <button className="bg-gradient-to-r from-blue-600 to-cyan-500 text-white px-8 py-3 rounded-full font-medium hover:shadow-lg hover:scale-105 transition-all duration-300">
+            <button className="bg-gradient-to-r from-blue-600 to-cyan-300 text-white px-8 py-3 rounded-full font-medium hover:shadow-lg hover:scale-105 transition-all duration-300">
               Start Free
             </button>
           </motion.div>
