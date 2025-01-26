@@ -3,10 +3,24 @@
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { useState } from 'react'
+import { signIn } from 'next-auth/react'
+import { useSearchParams, useRouter } from 'next/navigation'
 
 export default function Login() {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
+  const [isLoading, setIsLoading] = useState(false)
+  const searchParams = useSearchParams()
+  const router = useRouter()
+  const callbackUrl = searchParams.get('callbackUrl') || '/dashboard'
+
+  const handleGoogleSignIn = async () => {
+    setIsLoading(true)
+    const result = await signIn('google', {
+      callbackUrl: '/dashboard',
+      redirect: true
+    })
+  }
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-900 via-indigo-900 to-slate-900">
@@ -18,9 +32,13 @@ export default function Login() {
         >
           <h2 className="text-3xl font-bold text-white mb-6 text-center">Welcome Back</h2>
           
-          <button className="w-full bg-white text-gray-900 py-3 px-4 rounded-lg mb-6 flex items-center justify-center gap-3 hover:bg-gray-100 transition-colors">
+          <button 
+            onClick={handleGoogleSignIn}
+            disabled={isLoading}
+            className="w-full bg-white text-gray-900 py-3 px-4 rounded-lg mb-6 flex items-center justify-center gap-3 hover:bg-gray-100 transition-colors"
+          >
             <img src="/google.svg" alt="Google" className="w-5 h-5" />
-            Continue with Google
+            {isLoading ? 'Signing in...' : 'Continue with Google'}
           </button>
 
           <div className="relative my-6">
